@@ -8,7 +8,7 @@ RUN a2enmod rewrite headers
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 
 # Set ServerName to suppress domain warnings
-RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+RUN echo "ServerName db" >> /etc/apache2/apache2.conf
 
 COPY ./Public/.htaccess /var/www/html/.htaccess
 

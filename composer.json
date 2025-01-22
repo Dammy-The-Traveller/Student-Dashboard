@@ -12,7 +12,8 @@
         "symfony/var-dumper": "^7.1",
         "khanamiryan/qrcode-detector-decoder": "^2.0",
         "setasign/fpdf": "^1.8",
-        "bacon/bacon-qr-code": "^3.0"
+        "bacon/bacon-qr-code": "^3.0",
+        "vlucas/phpdotenv": "^5.6"
     },
     "autoload":{
         "psr-4":{

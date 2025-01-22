@@ -2,6 +2,13 @@
 use Core\App;
 use Core\Container;
 use Core\Database;
+use Dotenv\Dotenv;
+
+// Load .env
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->safeLoad();
+// print_r($_ENV);
+
 
 $container = new Container();
 
@@ -14,4 +21,5 @@ $container->bind('Core\Database', function(){
 // $db = $container->resolve('Core\Database');
 
 App::setContainer($container);
+
 
